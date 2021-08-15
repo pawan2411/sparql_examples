@@ -1,0 +1,10 @@
+PREFIX : <http://looneytunes-graph.com/>
+
+INSERT {
+    ?c2 :could_join_forces_with ?c3 .
+    ?c3 :could_join_forces_with ?c2
+}
+WHERE {
+    ?c1 :rival_of ?c2 .
+    ?c3 :enemy_of ?c1
+}

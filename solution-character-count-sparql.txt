@@ -1,0 +1,6 @@
+PREFIX : <http://looneytunes-graph.com/>
+
+SELECT (COUNT(?c) AS ?cCount)
+WHERE {
+    ?c a :Looney_Tunes_Character
+}

@@ -1,0 +1,11 @@
+PREFIX : <http://looneytunes-graph.com/>
+
+SELECT ?n
+WHERE {
+    ?c a :Looney_Tunes_Character ;
+        :name ?n
+
+    FILTER EXISTS {
+        ?c :known_for_catchphrase ?p 
+    }
+}

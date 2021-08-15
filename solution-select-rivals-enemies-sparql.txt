@@ -1,0 +1,8 @@
+PREFIX : <http://looneytunes-graph.com/>
+
+SELECT DISTINCT ?s ?p ?o 
+WHERE {
+  	VALUES ?p { :rival_of :enemy_of }
+           
+	?s ?p ?o
+}

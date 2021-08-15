@@ -1,0 +1,9 @@
+PREFIX : <http://looneytunes-graph.com/>
+PREFIX mfg: <http://myfavs-graph.com/>
+
+SELECT ?c1 ?c2
+FROM mfg:My_Favourites_Graph
+WHERE {
+    ?c1 mfg:has_an_appetite_for ?c2
+    FILTER(isIRI(?c2))
+}

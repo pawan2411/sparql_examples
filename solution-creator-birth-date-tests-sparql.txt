@@ -1,0 +1,19 @@
+PREFIX : <http://looneytunes-graph.com/>
+
+SELECT DISTINCT ?n ?result
+WHERE {
+    ?c :created_by ?p .
+    ?p :born_on ?b ;
+        :name ?n
+
+    BIND(year(?b) AS ?bYear)
+
+    BIND(
+    COALESCE(
+        IF(?bYear < 1900, "Born pre-1900", 1/0),
+        IF(?bYear >= 1900, "Born post-1900", 1/0),
+        "NA"
+        ) AS ?result
+    )
+}
+ORDER BY ASC(?bYear)

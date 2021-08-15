@@ -1,0 +1,8 @@
+PREFIX : <http://looneytunes-graph.com/>
+
+ASK {
+    :Sylvester :created_by ?p .
+    ?p :name "Isadore Frelang"
+       
+    # There is a typo in the name string above. Try "Isadore Freleng"
+}

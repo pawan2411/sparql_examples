@@ -1,0 +1,10 @@
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://looneytunes-graph.com/>
+PREFIX mfg: <http://myfavs-graph.com/>
+
+mfg:My_Favourites_Graph {
+    :Bugs_Bunny mfg:has_an_appetite_for "Carrots" .
+    :Daffy_Duck mfg:has_an_appetite_for "Spaghetti & Meatballs" .
+    :Taz mfg:has_an_appetite_for :Bugs_Bunny .
+}

@@ -1,0 +1,17 @@
+PREFIX : <http://looneytunes-graph.com/>
+
+SELECT DISTINCT ?d
+WHERE {
+    {
+        ?m :release_date ?d .
+    }
+    UNION
+    { 
+        ?p :born_on ?d .
+    }
+    UNION
+    { 
+        ?p :died_on ?d .
+    }
+}
+ORDER BY DESC(?d)

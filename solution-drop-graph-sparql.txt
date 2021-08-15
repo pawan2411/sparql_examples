@@ -1,0 +1,3 @@
+PREFIX mfg: <http://myfavs-graph.com/>
+
+DROP GRAPH mfg:My_Favourites_Graph

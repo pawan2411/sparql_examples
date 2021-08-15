@@ -1,0 +1,8 @@
+PREFIX : <http://looneytunes-graph.com/>
+
+SELECT ?c1n ?c2n
+WHERE {
+   ?c1 ^:rival_of/^:enemy_of ?c2 ;
+       	:name ?c1n .
+   ?c2 :name ?c2n
+}

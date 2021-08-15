@@ -1,0 +1,6 @@
+PREFIX : <http://looneytunes-graph.com/>
+
+SELECT ?t
+WHERE {
+    :Sylvester :personality_trait ?t
+}

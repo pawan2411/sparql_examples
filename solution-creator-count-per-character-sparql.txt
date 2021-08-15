@@ -1,0 +1,8 @@
+PREFIX : <http://looneytunes-graph.com/>
+
+SELECT ?n (COUNT(?p) AS ?pCount)
+WHERE {
+    ?c :created_by ?p ;
+        :name ?n
+}
+GROUP BY ?n

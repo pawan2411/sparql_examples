@@ -1,0 +1,10 @@
+PREFIX : <http://looneytunes-graph.com/>
+
+SELECT ?c ?cp
+WHERE {
+    ?c a :Looney_Tunes_Character .
+  
+    OPTIONAL {
+        ?c :known_for_catchphrase ?cp 
+    }
+}

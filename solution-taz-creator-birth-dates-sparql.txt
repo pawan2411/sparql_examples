@@ -1,0 +1,7 @@
+PREFIX : <http://looneytunes-graph.com/>
+
+SELECT ?d
+WHERE {
+    :Taz :created_by ?p .
+    ?p :born_on ?d
+}

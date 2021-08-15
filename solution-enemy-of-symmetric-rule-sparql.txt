@@ -1,0 +1,8 @@
+PREFIX : <http://looneytunes-graph.com/>
+
+INSERT {
+    ?c2 :enemy_of ?c1
+}
+WHERE {
+    ?c1 :enemy_of ?c2
+}

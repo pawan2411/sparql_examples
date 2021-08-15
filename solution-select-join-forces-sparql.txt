@@ -1,0 +1,6 @@
+PREFIX : <http://looneytunes-graph.com/>
+
+SELECT ?s ?o
+WHERE {
+	?s :could_join_forces_with ?o
+}

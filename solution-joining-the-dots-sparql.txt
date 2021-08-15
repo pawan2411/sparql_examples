@@ -1,0 +1,11 @@
+PREFIX : <http://looneytunes-graph.com/>
+
+SELECT DISTINCT ?subject ?predicate ?object
+WHERE {
+    VALUES ?start { :Sylvester }
+    VALUES ?end { :Taz }
+    
+    ?start (:|!:)* ?subject .
+    ?subject ?predicate ?object .
+    ?object (:|!:)* ?end
+}

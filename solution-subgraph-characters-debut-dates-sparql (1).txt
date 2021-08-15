@@ -1,0 +1,10 @@
+PREFIX : <http://looneytunes-graph.com/>
+
+CONSTRUCT {
+    ?c :debuted_in ?d
+}
+WHERE {
+    ?c a :Looney_Tunes_Character ;
+        :made_debut_appearance_in ?m .
+    ?m :release_date ?d 
+}
